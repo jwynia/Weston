@@ -5,7 +5,9 @@ The app is named after Edward Weston (http://en.wikipedia.org/wiki/Edward_Weston
 masterpieces of B&W photography and lighting. Incidentally, if you want an original print of that photo, it'll cost you at least $340,000 (http://www.sothebys.com/en/auctions/ecatalogue/2014/photographs-n09129/lot.24.html).
 
 # Setup
-This is a nwjs/node-webkit app. You'll need a functioning node/npm setup. To pull in the dependencies, in the root directory of this repository, run:
+For ready-to-run versions, download binaries from https://github.com/jwynia/Weston/releases and unzip. Run the .exe or .app as appropriate.
+
+To run from source, clone the repository. This is a nwjs/node-webkit app. You'll need a functioning node/npm setup. To pull in the dependencies, in the root directory of this repository, run:
 
 npm install
 
@@ -20,7 +22,7 @@ The run.sh script is currently hard-coded to node-webkit/nwjs v0.12.2 because th
 npm install node-webkit-builder -g
 
 ## Use
-Assuming the app launches correctly when you run ./run.sh, enter a search term in the giant text box at the top and click "Go" or hit ENTER. You'll get a bunch of interesting images related to that term as well as some synonym suggestions for alternate terms. To see a larger version of an image, just click it. To run a search for one of the alternate terms, just click the term.
+Assuming the app launches correctly when you run ./run.sh or the running the binary, enter a search term in the giant text box at the top and click "Go" or hit ENTER. You'll get a bunch of interesting images related to that term as well as some synonym suggestions for alternate terms. To see a larger version of an image, just click it. To run a search for one of the alternate terms, just click the term.
 
 If you click the "Save to Local" button under the larger image, a copy of the largest version Flickr has will be downloaded in the background along with a JSON file. That JSON file contains all of the info about the image, including the Flickr page for it and the name of the person who took the photo, which is what you need to do to comply with the license.
 
