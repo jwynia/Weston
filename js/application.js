@@ -1,7 +1,6 @@
 var gui = require('nw.gui');
 var Flickr = require("node-flickr");
 var mkdirp = require('mkdirp');
-var webshot = require('webshot');
 var request = require('request');
 var s3 = require('s3');
 var natural = require('natural');
