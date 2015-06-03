@@ -25,3 +25,7 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
+
+#savedPhotos
+#Basically, we shouldn't be committing anything people download using the app.
+savedPhotos

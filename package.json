@@ -1,0 +1,33 @@
+{
+  "name": "Weston",
+  "title": "Weston - Image Finder",
+  "description": "Finds images for blog posts, presentations, etc.",
+  "version": "1.0.0",
+  "homepage": "http://seveninterruptions.com",
+  "author": {
+    "name": "j@wynia.org",
+    "url": "http://seveninterruptions.com"
+  },
+  "main": "index.html",
+  "private": true,
+  "dependencies": {
+    "WNdb": "^3.1.1",
+    "array.prototype.find": "^1.0.0",
+    "httpreq": "^0.4.12",
+    "mkdirp": "^0.5.1",
+    "natural": "^0.2.1",
+    "node-flickr": "0.0.2",
+    "request": "^2.57.0",
+    "s3": "^4.4.0",
+    "watchr": "^2.4.13",
+    "webshot": "^0.16.0"
+  },
+  "window": {
+    "show": true,
+    "toolbar": true,
+    "frame": false,
+    "position": "center",
+    "width": 1600,
+    "height": 1000
+  }
+}
