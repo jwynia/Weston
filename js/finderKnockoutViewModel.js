@@ -23,7 +23,6 @@ var ViewModel = function() {
    vm.selectedPhotoUserInfo = ko.observable();
    vm.selectedPhotoOriginalURL = ko.observable();
    vm.selectledPhotoCompleteInfo = ko.computed(function() {
-      //return { photo: vm.selectedPhoto(),detail: vm.selectedPhotoDetail(),sizes: vm.selectedPhotoSizes(),userInfo: vm.selectedPhotoUserInfo() };
       return {
          'photo': vm.selectedPhoto(),
          'detail': vm.selectedPhotoDetail(),
@@ -31,6 +30,7 @@ var ViewModel = function() {
          'originalURL': vm.selectedPhotoOriginalURL()
       };
    }, vm);
+   vm.savePath = ko.observable(savePath);
 
    vm.runSearch = function() {
       if (vm.searchTerm() != null) {
@@ -90,13 +90,17 @@ var ViewModel = function() {
       vm.runSearch();
    }
    vm.saveSelectedPhotoToLocal = function() {
-      fs.writeFile("savedPhotos/" + vm.selectedPhoto().id + ".json", JSON.stringify(vm.selectledPhotoCompleteInfo(), null, 4), function(err) {
+      fs.writeFile(vm.savePath() + "/" + vm.selectedPhoto().id + ".json", JSON.stringify(vm.selectledPhotoCompleteInfo(), null, 4), function(err) {
          if (err) {
             console.log("Couldn't write to file. Error: " + err);
             return console.log(err);
          }
       });
-      
+
+   }
+
+   vm.openSavePath = function (){
+      gui.Shell.openItem(vm.savePath());
    }
    vm.storePhotoToS3 = function(photo) {
       var params = {
