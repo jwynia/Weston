@@ -2,7 +2,7 @@
 A photo finder that uses Flickr's Creative Commons photos to find images for blog posts/presentations that can be used By-Attribution (https://creativecommons.org/licenses/by/4.0/). Built using node-webkit and KnockoutJS.
 
 The app is named after Edward Weston (http://en.wikipedia.org/wiki/Edward_Weston) who is one of my favorite photographers. His "Pepper No. 30" (http://en.wikipedia.org/wiki/Pepper_No._30) and that whole series are
-masterpieces of B&W photography and lighting.
+masterpieces of B&W photography and lighting. Incidentally, if you want an original print of that photo, it'll cost you at least $340,000 (http://www.sothebys.com/en/auctions/ecatalogue/2014/photographs-n09129/lot.24.html).
 
 # Setup
 This is a nwjs/node-webkit app. You'll need a functioning node/npm setup. To pull in the dependencies, in the root directory of this repository, run:
